@@ -9,6 +9,7 @@ import Product from "./components/Product";
 import InvalidPage from "./components/InvalidPage";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import Cart from "./components/Cart";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path="/products/:id" element={<Product />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/cart" element={<Cart/>} />
         <Route exact path="/*" element={<InvalidPage />} />
       </Routes>
     </div>
